@@ -6,16 +6,6 @@
     <% } %>
 </div>
 
-<% if (!context.currentProvider) { %>
-<div class="status already-authenticated-msg">
-
-        <p class="message-copy">
-           Have an account before and haven't updated your details? <a href="/reset_details" style="text-decoration: none; color: #27AAE1;">Click here</a> to
-           update your username and password
-        </p>
-</div>
-<% } %>
-
 <div class="js-reset-success status submission-success hidden">
     <h4 class="message-title"><%- gettext("Password Reset Email Sent") %></h4>
     <div class="message-copy">
@@ -88,4 +78,12 @@
 
 <div class="toggle-form">
     <a class="sign-up-button form-toggle" data-type="register"><%- gettext("DON'T HAVE AN ACCOUNT? SIGN UP!") %></a>
+</div>
+
+<div class="faq-section">
+
+        <p class="message-copy">
+           Have an account before and haven't updated your details? <a href="/reset_details" style="text-decoration: none; color: #27AAE1;">Click here</a> to
+           update your username and password
+        </p>
 </div>
